@@ -46,4 +46,11 @@ console.log(typeof d)
 let f=String(d)
 console.log(typeof f)
 
-
+//code with harry objects
+const object=
+{
+"kaustubh":30,
+"vrushabh":true,
+"rajashree":20,
+}
+console.log(object["vrushabh"])
