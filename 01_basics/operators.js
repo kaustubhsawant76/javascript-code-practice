@@ -8,3 +8,14 @@ console.log("the division of a+b is ",a/b)
 console.log("the multiplicatin of a+b is ",a*b)
 console.log("the exponentional of a+b is ",a**b)
 console.log("the modulus of a+b is ",a%b)
+
+console.log("++a=",++a) //11
+console.log("a++=",a++) //11
+console.log("--a=",--a) //11
+console.log("a--=",a--) //11
+console.log("a=",a)      //10
+console.log("a--=",a--)   //10
+console.log("a=",a)   //9
+
+//ASSIGNMENT OPERATORS
+
