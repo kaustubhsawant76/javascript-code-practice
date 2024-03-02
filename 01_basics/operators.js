@@ -18,4 +18,10 @@ console.log("a--=",a--)   //10
 console.log("a=",a)   //9
 
 //ASSIGNMENT OPERATORS
-
+let c=10
+console.log("+= output is",c+=5)//15
+console.log("-= output is",c-=5) //10
+console.log("*= output is",c*=5) //50
+console.log("/= output is",c/=5) //10
+console.log("**= output is",c**=2) //100
+console.log("% output is",c%=5)  //0
