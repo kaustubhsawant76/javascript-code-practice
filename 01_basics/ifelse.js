@@ -24,3 +24,7 @@ else
 {
     alert("you are senior citizen do not drive")
 }
+
+//TERNARY OPERATOR
+let c=prompt("enter your agde")
+console.log(c>18?"you can drive":"you cannot drive");
