@@ -38,3 +38,22 @@ age=Number.parseInt(age)
 age>18?"you can drive legaly":"you cannot drive legally"
 
 //PS3 
+let num=prompt("enter the number")
+num=Number.parseInt(num)
+if(num%2==0&&num%3==0)
+{
+        console.log("the number is divisible by 2 and 3");
+}
+else
+{
+        console.log("the number is not divisible by 2 and 3");
+}
+//PS4
+let number=prompt("enter the number")
+number=Number.parseInt(number)
+if(number%2==0 || number%3==0)
+{console.log("the number is divisible by either 2 or 3");}
+else
+{
+        console.log("the number is divisible by none");
+}
