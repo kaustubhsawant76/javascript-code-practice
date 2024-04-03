@@ -42,3 +42,24 @@ let a5=[8,1,6,9,4]
 a5.sort()
 console.log(a5);
 
+//SPREAD OPERATOR ...
+let b1=[2,4,7,8]
+let b2=[6,7,9,4]
+let b3=[...b1,...b2]
+console.log(b3);
+
+let c1=[1,2,[3,4],5,[3,6],7]
+let c2=c1.flat(3)
+console.log(c2)
+
+console.log(Array.isArray("kaustubh"))
+console.log(Array.from('vrushabh'));
+
+let d1=100
+let d2=200
+let d3=799
+console.log(Array.of(d1,d2,d3));
+
+console.log(Array.from({id:"kaustubh"}));
+
+
