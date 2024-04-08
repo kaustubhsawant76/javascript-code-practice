@@ -54,3 +54,32 @@ object.greetingTwo=function()
 }
 console.log(object.greetingTwo());
 
+//0BJECTS PART 2
+
+//const flipkart=new Object()  //SINGLETON OBJECT
+
+const obj={}
+obj.name="kaustubh"
+obj.email="kaustubhsawant76@gmail.com"
+obj.isLoggedIn=true
+
+console.log(obj);
+//NESTING OF OBJECTS // DECLARING OBJECT IN A OBJECT
+const regularUser=
+{
+  email1:"kaustubh@gmail.com",
+  fullName:
+  {
+    name1:"kaustubh",
+    location:
+    {
+      city:"mumbai",
+      state:"maharashtra",
+
+    }
+  }
+}
+console.log(regularUser);
+console.log(regularUser.fullName);
+console.log(regularUser.fullName.location);
+console.log(regularUser.fullName.location.city);
