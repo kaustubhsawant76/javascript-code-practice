@@ -83,3 +83,22 @@ console.log(regularUser);
 console.log(regularUser.fullName);
 console.log(regularUser.fullName.location);
 console.log(regularUser.fullName.location.city);
+
+//THE BELOW IS OPTIONAL CHAINING MEANS ? WILL CHECK WEATHER THE TERM IS IN THE OBJECT OR NOT IF NOT THEN TOO THE PROGRAM WILL EXECUTE
+//console.log(regularUser,fullName?.location.city);
+
+const obj2={1:"a",2:"b",3:"c"}
+const obj3={4:"a",5:"b",6:"c"}
+const obj4={7:"a",8:"b",9:"c"}
+//CONCATINATION CAN BE DONE WITH THE HELP OF OBJECT.ASSIGN
+//const obj5=Object.assign({},obj2,obj3,obj4)
+//console.log(obj5);
+
+//CONCATINATION CAN BE ALSO DONE WITH THE HELPOF SPREAD OPERATOR ()....)
+const obj6={...obj2,...obj3,...obj4}
+console.log(obj6);
+
+//you will  get values from databese in the form of arrays and contains many objects insite it
+
+
+
