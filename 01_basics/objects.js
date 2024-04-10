@@ -99,6 +99,25 @@ const obj6={...obj2,...obj3,...obj4}
 console.log(obj6);
 
 //you will  get values from databese in the form of arrays and contains many objects insite it
+const dbobj=[
+  {
+    id:1,
+    email:"kaustubh@gmail.com",
+  },
+  {
+    id:2,
+    email:"kaustubh@gmail.com",
+  },
+  {
+    id:3,
+    email:"kaustubh@gmail.com",
+  },
+]
+console.log(dbobj[1].email);
+console.log(object);
+console.log(Object.keys(object));
+console.log(Object.values(object));
+console.log(Object.entries(object));
 
-
-
+//hasOwnPropert() method is used to check whether the property exist in the object or not this can prevent error
+console.log(object.hasOwnProperty('kaustubh'));
