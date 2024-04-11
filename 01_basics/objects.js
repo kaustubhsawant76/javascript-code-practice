@@ -121,3 +121,26 @@ console.log(Object.entries(object));
 
 //hasOwnPropert() method is used to check whether the property exist in the object or not this can prevent error
 console.log(object.hasOwnProperty('kaustubh'));
+
+//DESTRUCTURING OF OBJECT IS USED TO ACCES ANY PROPERTY OF AN OBJECT IN A EASY MAANER
+
+const {kaustubh}=object
+console.log(kaustubh);
+const {kaustubh:k}=object
+console.log(k);
+
+
+//JSON STRUCTUTRE in {} and keys and values both are in string format
+{
+  "id":"as",
+  "name":"kaustubh",
+  "location":"mumbai"
+
+}
+
+//JSON CAN ALSO BE IN ARRAY OBJECT FORMAR AS BELOW=
+[
+  {},
+  {},
+  {},
+]
