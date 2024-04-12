@@ -7,13 +7,15 @@ function addTwoNumbers(a,b){
 }
 addTwoNumbers(30,20)
 
+//the value which function returns and the console log returns many not be the asame
 function subTwoNumbers(c,d)
 {
-    return c-d;
+   let e=c-d;
+   return e //easiest way
 
 }
 
-let e=console.log(subTwoNumbers(50,30));
+const e=subTwoNumbers(50,30);
 console.log(e);
 
 function avgTwoNumbers(x,y)
@@ -38,3 +40,19 @@ const hello=()=>{
 hello()
 
 //CHAI AND CODE JAVASCRIPT
+
+function SayMyName()
+{
+    console.log("k");
+    console.log("a");
+    console.log("u");
+    console.log("s");
+    console.log("t");
+    console.log("u");
+    console.log("b");
+    console.log("h");
+}
+
+SayMyName()
+
+//ANYTHING WRITEEN AFTER RETURN STATEMENT DOENOT EXECUTE
