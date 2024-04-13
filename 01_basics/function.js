@@ -56,3 +56,16 @@ function SayMyName()
 SayMyName()
 
 //ANYTHING WRITEEN AFTER RETURN STATEMENT DOENOT EXECUTE
+//IF EMPTY FUNCTION IS PASSED ()THEN THE RESULT IS UNDEFINED
+
+function logInUser(username)
+{
+    if (username === undefined)
+    {console.log("please enter proper number");}
+    return
+    return `${username} "is logged in"`
+    
+}
+console.log(logInUser());
+let z=logInUser()
+console.log(z);
