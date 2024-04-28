@@ -85,9 +85,51 @@
 //FOR OF LOOP DOESNOTB WORKS ON OBJECT
 //WHEN YOU OPEN SCOPE {} IT IS COMPULSARY TO WRITE RETURN INTO IT
 
-let arr=[1,2,3,4,5,6,7,8,9,10]
+// let arr=[1,2,3,4,5,6,7,8,9,10]
 
-let arr1=arr.map((element)=>{return element*10})  
-           .map((element)=>{return element+1})
-           .filter((element)=>{return element>40})   //CHAINING EXAMPLE
-console.log(arr1);
+// let arr1=arr.map((element)=>{return element*10})  
+//            .map((element)=>{return element+1})
+//            .filter((element)=>{return element>40})   //CHAINING EXAMPLE
+// console.log(arr1);
+
+
+// let a=[1,2,3,4,5,6,7,8]
+// let b=a.reduce((h1,h2)=>
+// {
+//     return h1+h2
+// })
+// console.log(b);
+
+// CHAI AND CODE
+// let a=[1,2,3,4,5,6]
+ 
+// let b=a.reduce((acc,currval)=>
+// {
+//     console.log(`acc:${acc} and corrval:${currval}`);
+//     return acc+currval
+// },2)  //, is the value where to start from
+// console.log(b);
+
+//SHOPPING CART EXAMPLE
+const shopingCart=[
+{
+    itemname:"JS COURSE",
+    price:3999,
+},
+{
+    itemname:"DATA SCIENCE COURSE",
+    price:13999,
+},
+{
+    itemname:"python  COURSE",
+    price:999,
+},
+{
+    itemname:"MOBILE DEVELOPMENT COURSE",
+    price:6999,
+},
+]
+
+let a=shopingCart.reduce((acc,item)=>{return item.price+acc},0)  //ACC SHOULD BE INITIALIZED TO 0 otherwise the output will not come properly
+
+console.log(a);
