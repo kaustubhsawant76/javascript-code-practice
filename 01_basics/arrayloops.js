@@ -98,38 +98,84 @@
 // {
 //     return h1+h2
 // })
-// console.log(b);
+// // console.log(b);
 
-// CHAI AND CODE
-// let a=[1,2,3,4,5,6]
+// // CHAI AND CODE
+// // let a=[1,2,3,4,5,6]
  
-// let b=a.reduce((acc,currval)=>
+// // let b=a.reduce((acc,currval)=>
+// // {
+// //     console.log(`acc:${acc} and corrval:${currval}`);
+// //     return acc+currval
+// // },2)  //, is the value where to start from
+// // console.log(b);
+
+// //SHOPPING CART EXAMPLE
+// const shopingCart=[
 // {
-//     console.log(`acc:${acc} and corrval:${currval}`);
-//     return acc+currval
-// },2)  //, is the value where to start from
+//     itemname:"JS COURSE",
+//     price:3999,
+// },
+// {
+//     itemname:"DATA SCIENCE COURSE",
+//     price:13999,
+// },
+// {
+//     itemname:"python  COURSE",
+//     price:999,
+// },
+// {
+//     itemname:"MOBILE DEVELOPMENT COURSE",
+//     price:6999,
+// },
+// ]
+
+// let a=shopingCart.reduce((acc,item)=>{return item.price+acc},0)  //ACC SHOULD BE INITIALIZED TO 0 otherwise the output will not come properly
+
+// console.log(a);
+
+
+//IN FOR EACH LOOP WE HAVE TO USE CONOLE.LOG AND NOT REYURN
+
+// //PS CODE WITH HARRY MAPFILTER REDUCE
+// //PS1
+// let a=[1,2,3,4]; 
+// let n=prompt("enter the number");
+// n=Number.parseInt(n);
+// a.push(n); 
+// console.log(a);
+
+//PS2
+
+// let a=[1,2,3,4]; 
+// let n;
+// do{
+//  n=prompt("enter the number");
+// n=Number.parseInt(n);
+// a.push(n); 
+// console.log(a);
+// }
+// while(n!=0)
+// console.log("0 number is entered");
+
+// //PS3
+// let a=[34,50,32,10,40,70,88]
+// let d=a.filter((value)=>{return value%10==0; })
+// console.log(d);
+
+//PS4
+//1st way
+// let a=[2,4,5,6,7,8]
+// let b=a.forEach((element)=>{console.log(element*element);})
 // console.log(b);
 
-//SHOPPING CART EXAMPLE
-const shopingCart=[
-{
-    itemname:"JS COURSE",
-    price:3999,
-},
-{
-    itemname:"DATA SCIENCE COURSE",
-    price:13999,
-},
-{
-    itemname:"python  COURSE",
-    price:999,
-},
-{
-    itemname:"MOBILE DEVELOPMENT COURSE",
-    price:6999,
-},
-]
+//2nd way
+// let a=[2,4,5,6,7,8]
+// let b=a.map((element)=>{return element*element;})
+// console.log(b);
 
-let a=shopingCart.reduce((acc,item)=>{return item.price+acc},0)  //ACC SHOULD BE INITIALIZED TO 0 otherwise the output will not come properly
 
-console.log(a);
+//PS5
+// let a=[2,4,5,6,7,8]
+// let n=a.reduce((acc,currval)=>{return acc*currval;})
+// console.log(n);
