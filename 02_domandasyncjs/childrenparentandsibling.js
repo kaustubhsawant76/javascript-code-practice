@@ -28,3 +28,13 @@ a.parentNode //get the parent node which is body or a text or comment node
 a.parentElement //it only gives parent element not the nodes
 
 
+//TABLE NAVIGATION
+document.body.firstElementChild.firstElementChild .rows //into div and then into table[COLLECTION OF tr elements]
+document.body.firstElementChild.firstElementChild .caption //into div and then into table[REFENCE TO <caption>]
+document.body.firstElementChild.firstElementChild .thead //into div and then into table[REFENCE TO <thead>]
+document.body.firstElementChild.firstElementChild .tfoot //into div and then into table[REFENCE TO <tfoot>]
+document.body.firstElementChild.firstElementChild .tbodies //into div and then into table[COLLECTION OF <tbody> elements]
+//REST CHECK FROM NOTES CWH
+
+
+//SEARCHING THE DOM
