@@ -57,3 +57,6 @@ function clickHandler(color){
 
 document.getElementById('orange').onclick = clickHandler("orange")
 document.getElementById('green').onclick = clickHandler("green")
+//in the above example we are retuning a function which also returns lexical scope that is why inner color can acces outer function color
+//if we do not make outer function the function gets directly  executed and we get change in color directly without clicking
+//this is the best example for closures practical application
