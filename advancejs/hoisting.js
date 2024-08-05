@@ -28,3 +28,5 @@ var getName=()=>{
 
 
 // console.log(this);  //in browser it is window object  in node enviornment or vs code it is {} empty object
+//whenever you invoke a function a new execution context is created
+//lexical envornment is the local memory along with the lexical enviornment of the parent

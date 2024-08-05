@@ -60,3 +60,54 @@ document.getElementById('green').onclick = clickHandler("green")
 //in the above example we are retuning a function which also returns lexical scope that is why inner color can acces outer function color
 //if we do not make outer function the function gets directly  executed and we get change in color directly without clicking
 //this is the best example for closures practical application
+
+//USES of closures:-
+//Module Design Pattern
+//Currying
+//Functions like once
+//memoize
+//maintaining state in async world
+//setTimeouts
+//Iterators
+//and many more
+
+
+
+//in the case below kaustubh sawant gets printed and it doesnot wait for setTimeout to execute
+// function x(){
+//     var i=1;
+//     setTimeout(function(){
+//         console.log(i);
+//     },3000)
+//     console.log("kaustubh sawant");
+// }
+// x();
+
+
+// function x(){
+//     for(let i=1;i<=5;i++){     //if we use var the output will be 6 as it points towards the same memory 
+//     setTimeout( function(){
+//         console.log(i);
+//     },i*1000)
+
+// }
+    
+// }
+// x();
+
+
+//the below is example by using var only
+// function x(){
+//     for(var i=1;i<=5;i++){ 
+//         function close(i){      //due to closures new copy of i is formed 
+//     setTimeout(function(){
+//         console.log(i);
+//     },i*1000)
+// }
+// close(i);
+
+// }
+
+    
+// }
+// x();
