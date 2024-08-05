@@ -111,3 +111,21 @@ document.getElementById('green').onclick = clickHandler("green")
     
 // }
 // x();
+
+
+//interview question explain colsures
+function outer(b){
+    var a=10;
+    function inner(){
+        console.log(a,b);
+    }
+    return inner;
+}
+
+outer()(); //additional () means a function calling another inner function
+//if you donot want to write() then while returning innerv function just return inner() intead of just inner
+
+var close=outer("kaustubh");
+close(); //we can do like this also instead of outer()()
+
+
