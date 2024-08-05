@@ -1,2 +1,2 @@
 # js-chaiandcode-youtube
-This repository contains codes of chai and code javascript hindi
+This repository contains code practice of JAVASCRIPT including basic,advance topics and object oriented programming(OOPS)
