@@ -46,17 +46,17 @@
 //     return document.body.style.backgroundColor="orange"
 // })
 
-//the below example show example of closures where inner function can access the outer function ie lexical scope
-function clickHandler(color){
-    // document.body.style.backgroundColor = `${color}`
+// //the below example show example of closures where inner function can access the outer function ie lexical scope
+// function clickHandler(color){
+//     // document.body.style.backgroundColor = `${color}`
 
-    return function(){
-        document.body.style.backgroundColor = `${color}`
-    }
-}
+//     return function(){
+//         document.body.style.backgroundColor = `${color}`
+//     }
+// }
 
-document.getElementById('orange').onclick = clickHandler("orange")
-document.getElementById('green').onclick = clickHandler("green")
+// document.getElementById('orange').onclick = clickHandler("orange")
+// document.getElementById('green').onclick = clickHandler("green")
 //in the above example we are retuning a function which also returns lexical scope that is why inner color can acces outer function color
 //if we do not make outer function the function gets directly  executed and we get change in color directly without clicking
 //this is the best example for closures practical application
@@ -114,18 +114,49 @@ document.getElementById('green').onclick = clickHandler("green")
 
 
 //interview question explain colsures
-function outer(b){
-    var a=10;
-    function inner(){
-        console.log(a,b);
-    }
-    return inner;
-}
+// function outest(c){
+//     var c=20;
+// function outer(b){
+//     var a=10;
+//     function inner(){
+//         console.log(a,b,c);
+//     }
+//     return inner;
+// }
+// return outer;
+// }
+// //if there  is same let in outer function same name then it will only execute the block scope it doesnot care about  outer scope
+// //but if there was no let in block scope then according to closures it wuols have found in the parent function  
 
-outer()(); //additional () means a function calling another inner function
+// outest()("kaustubh")(); //additional () means a function calling another inner function
 //if you donot want to write() then while returning innerv function just return inner() intead of just inner
 
-var close=outer("kaustubh");
-close(); //we can do like this also instead of outer()()
+// var close=outer("kaustubh");
+// close(); //we can do like this also instead of outer()()
+
+
+// example of data hiding and encapsulation using closures
+// function counter(){
+//     var count=0;
+//     function incrementcounter(){
+//         count++;
+//         console.log(count);
+//     }
+//     return incrementcounter;
+    
+// }
+//the example of data hiding is that now because of the above closure var cannot be accesed from the outer function hence the data hiding can be achieved
+
+// var counter1=counter();
+// counter1();//1
+// counter1();//value inc by 1 ie 1 will become 2
+
+
+// var counter2=counter(); //if we put the same counter in anotjer var it behaves like a new counter it doesnot touches the above scope
+
+// counter2();//1
+// counter2();//2
+
+
 
 
