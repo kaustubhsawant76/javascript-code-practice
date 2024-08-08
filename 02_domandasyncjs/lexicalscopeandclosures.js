@@ -158,5 +158,9 @@
 // counter2();//2
 
 
+//disadvantages of closures
+//1=it consumes lot of memory
+
+
 
 
