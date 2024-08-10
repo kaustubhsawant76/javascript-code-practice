@@ -157,9 +157,35 @@
 // counter2();//1
 // counter2();//2
 
+//the above is not the proper way for counter the below shows method using constructor
+
+// function Counter(){
+// var count=0;
+// this.incrementCounter=function (){
+// count++;
+// console.log(count);
+
+// }
+// this.decrementCounter=function(){
+//     count--;
+//     console.log(count);
+    
+// }
+
+// }
+// var counter1=new Counter();
+// counter1.incrementCounter();
+// counter1.incrementCounter();
+// counter1.decrementCounter();
+
+
 
 //disadvantages of closures
 //1=it consumes lot of memory
+
+
+
+//JAVASCRIPT HAS A GARBAGE COLLECTOR WHICH AUTOMATICALLY FREES MEMORY WHEN NOT USED
 
 
 
