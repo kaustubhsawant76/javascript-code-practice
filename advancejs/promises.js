@@ -120,3 +120,59 @@ function validateCart(cart){
 //Promise.any() will execute the least time taking promises that is there is race which promise comes first  same as Promise.race()  only difference is it waits for succesful promise not error one
 //Promise.any() if all promises fail then the result will be an agrregated error ie average error
 
+
+
+//PROMISE API CODE DEMO
+
+const p1= new Promise((resolve,reject) => {
+    setTimeout(()=>{
+        reject("P1 Reject")
+    },3000);
+    
+});
+
+const p2= new Promise((resolve,reject) => {
+    setTimeout(()=>{
+        resolve("P2 Success")
+    },5000);
+    
+});
+
+const p3= new Promise((resolve,reject) => {
+    setTimeout(()=>{
+        resolve("P3 Success")
+    },4000);
+    
+});
+
+Promise.all([p1,p2,p3]).then(res =>{
+    console.log(res);
+    
+}).catch((err)=>{
+    console.error(err);
+    
+});
+
+Promise.allSettled([p1,p2,p3]).then(res =>{
+    console.log(res);
+    
+}).catch((err)=>{
+    console.error(err);
+    
+});
+
+Promise.race([p1,p2,p3]).then(res =>{
+    console.log(res);
+    
+}).catch((err)=>{
+    console.error(err);
+    
+});
+
+Promise.any([p1,p2,p3]).then(res =>{
+    console.log(res);
+    
+}).catch((err)=>{
+    console.error(err);
+    
+});
